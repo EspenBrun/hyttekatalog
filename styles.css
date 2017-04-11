@@ -17,4 +17,32 @@
 .img-frontpage {
 	width: 33vw;
 	height: 33vw;
+	margin: 0 auto;
+	position: relative;
 }
+
+@media screen and (max-width: 768px) {
+    .img-frontpage {
+        width: 100vw;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.frontpage-txt-container {
+    font-size: 50px;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    color: white;    
+}
+
+.frontpage-txt {
+	font-size: 3em;
+}
+
