@@ -21,6 +21,7 @@
 	position: relative;
 }
 
+
 @media screen and (max-width: 768px) {
     .img-frontpage {
         width: 100vw;
@@ -44,5 +45,13 @@
 
 .frontpage-txt {
 	font-size: 3em;
+}
+
+.goto-cabin:hover {
+  color: #FFF;
+}
+
+.goto-cabin {
+  color: #FFF;
 }
 

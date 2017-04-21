@@ -1,243 +1,121 @@
 <?xml version="1.0" ?>
-
-
-
 <hyttekatalog>
-
-
-
 	<fjellhytta>
-	
 		<hytteid>1</hytteid>
-		
 		<bilde>hund.jpg</bilde>
-
 		<beliggenhet>Oppdal</beliggenhet>
-
 		<utleieperioden>Hele året</utleieperioden>
-
 		<kjøkken>Tekjøkken</kjøkken>
-
 		<strøm>Ja</strøm>
-
 		<innlagtvann>Ja</innlagtvann>
-
 		<dusj>Ja</dusj>
-
 		<antallsenger>5</antallsenger>
-		
 		<pris>500</pris>
-
 		<hytteside>hytte1.txt</hytteside>
-		
 		<bilde1>hund.jpg</bilde1>
-		
 		<bilde2>hund.jpg</bilde2>
-		
 		<bilde3>hund.jpg</bilde3>
-
 	</fjellhytta>
-
 	<fjellhytta>
 
 		<hytteid>2</hytteid>
-		
-		<bilde></bilde>
-
+		<bilde>hund.jpg</bilde>
 		<beliggenhet>Nerskogen</beliggenhet>
-
 		<utleieperioden>Vinter</utleieperioden>
-
 		<kjøkken>Komfyr og ovn</kjøkken>
-
 		<strøm>Ja</strøm>
-
 		<innlagtvann>Ja</innlagtvann>
-
 		<dusj>Ja</dusj>
-
 		<antallsenger>4</antallsenger>
-		
 		<pris>550</pris>
-
 		<hytteside>hytte2.txt</hytteside>
-		
 		<bilde1>hund.jpg</bilde1>
-		
 		<bilde2>hund.jpg</bilde2>
-		
 		<bilde3>hund.jpg</bilde3>
-
 	</fjellhytta>
 
-
-
-	<sjøhytta>
-	
+	<sjohytta>
 		<hytteid> 3 </hytteid>
-
-		<bilde></bilde>
-
-		<beliggenhet></beliggenhet>
-
-		<utleieperioden></utleieperioden>
-
-		<kjøkken></kjøkken>
-
-		<strøm></strøm>
-
-		<innlagtvann></innlagtvann>
-
-		<dusj></dusj>
-
-		<antallsenger></antallsenger>
-		
-		<pris></pris>		
-
+		<bilde>hund.jpg</bilde>
+		<beliggenhet>Hitra</beliggenhet>
+		<utleieperioden>Mai-Oktober</utleieperioden>
+		<kjøkken>Komfyr, kjøleskap</kjøkken>
+		<strøm> Ja </strøm>
+		<innlagtvann>Ja</innlagtvann>
+		<dusj>Nei</dusj>
+		<antallsenger>4</antallsenger>
+		<pris>750</pris>		
 		<hytteside></hytteside>
-		
 		<bilde1>hund.jpg</bilde1>
-		
 		<bilde2>hund.jpg</bilde2>
-		
 		<bilde3>hund.jpg</bilde3>
-
-	</sjøhytta>
+	</sjohytta>
 
 	<skogshytta>
-	
 		<hytteid> 4 </hytteid>
-
-		<bilde></bilde>
-
-		<beliggenhet></beliggenhet>
-
-		<utleieperioden></utleieperioden>
-
-		<kjøkken></kjøkken>
-
-		<strøm></strøm>
-
-		<innlagtvann></innlagtvann>
-
-		<dusj></dusj>
-
-		<antallsenger></antallsenger>
-		
-		<pris></pris>
-
+		<bilde>hund.jpg</bilde>
+		<beliggenhet>Den store skogen</beliggenhet>
+		<utleieperioden>Hele året</utleieperioden>
+		<kjøkken>Enkel tekjøkken. Gas</kjøkken>
+		<strøm>Nei</strøm>
+		<innlagtvann>Ja</innlagtvann>
+		<dusj>Nei</dusj>
+		<antallsenger>8</antallsenger>
+		<pris>500</pris>
 		<hytteside></hytteside>
-		
 		<bilde1>hund.jpg</bilde1>
-		
 		<bilde2>hund.jpg</bilde2>
-		
 		<bilde3>hund.jpg</bilde3>
-
 	</skogshytta>
 
 	<skogshytta>
-	
 		<hytteid> 5 </hytteid>
-
-		<bilde></bilde>
-
-		<beliggenhet></beliggenhet>
-
-		<utleieperioden></utleieperioden>
-
-		<kjøkken></kjøkken>
-
-		<strøm></strøm>
-
-		<innlagtvann></innlagtvann>
-
-		<dusj></dusj>
-
-		<antallsenger></antallsenger>
-		
-		<pris></pris>
-
+		<bilde>hund.jpg</bilde>
+		<beliggenhet>Den lille skogen</beliggenhet>
+		<utleieperioden>Hele året</utleieperioden>
+		<kjøkken>Ovn, komfyr, mikro</kjøkken>
+		<strøm>Ja</strøm>
+		<innlagtvann>Ja</innlagtvann>
+		<dusj>Nei</dusj>
+		<antallsenger>10</antallsenger>
+		<pris>700</pris>
 		<hytteside></hytteside>
-		
 		<bilde1>hund.jpg</bilde1>
-		
 		<bilde2>hund.jpg</bilde2>
-		
 		<bilde3>hund.jpg</bilde3>
-
 	</skogshytta>
-
-
-
-
 
 <fjellhytta>
-
 	   <hytteid> 6 </hytteid>
-
-		<bilde></bilde>
-
-		<beliggenhet></beliggenhet>
-
-		<utleieperioden></utleieperioden>
-
-		<kjøkken></kjøkken>
-
-		<strøm></strøm>
-
-		<innlagtvann></innlagtvann>
-
-		<dusj></dusj>
-
-		<antallsenger></antallsenger>
-		
-		<pris></pris>
-
+		<bilde>hund.jpg</bilde>
+		<beliggenhet>Røros</beliggenhet>
+		<utleieperioden>Hele året</utleieperioden>
+		<kjøkken>Kjøleskap, ovn, komfyr</kjøkken>
+		<strøm>Ja</strøm>
+		<innlagtvann>Nei</innlagtvann>
+		<dusj>Nei</dusj>
+		<antallsenger>4</antallsenger>
+		<pris>300</pris>
 		<hytteside></hytteside>
-		
 		<bilde1>hund.jpg</bilde1>
-		
 		<bilde2>hund.jpg</bilde2>
-		
 		<bilde3>hund.jpg</bilde3>
-
 	</fjellhytta>
 
-	<sjøhytta>
-	
+	<sjohytta>
 		<hytteid> 7 </hytteid>
-
-		<bilde></bilde>
-
-		<beliggenhet></beliggenhet>
-
-		<utleieperioden></utleieperioden>
-
-		<kjøkken></kjøkken>
-
-		<strøm></strøm>
-
-		<innlagtvann></innlagtvann>
-
-		<dusj></dusj>
-
-		<antallsenger></antallsenger>
-		
-		<pris></pris>
-
+		<bilde>hund.jpg</bilde>
+		<beliggenhet>Storøya</beliggenhet>
+		<utleieperioden>Mai-September</utleieperioden>
+		<kjøkken>Ovn, komfyr, kjøleskap</kjøkken>
+		<strøm>Ja</strøm>
+		<innlagtvann>Ja</innlagtvann>
+		<dusj>Ja</dusj>
+		<antallsenger>6</antallsenger>
+		<pris>600</pris>
 		<hytteside></hytteside>
-		
 		<bilde1>hund.jpg</bilde1>
-		
 		<bilde2>hund.jpg</bilde2>
-		
 		<bilde3>hund.jpg</bilde3>
-
-	</sjøhytta>
-
-
-
-
-
+	</sjohytta>
 </hyttekatalog>
