@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <hyttekatalog>
-	<fjellhytta>
+	<Fjellhytter>
 		<hytteid>1</hytteid>
-		<bilde>hund.jpg</bilde>
+		<bilde>hyttebilder/1/hytte11.jpg</bilde>
 		<beliggenhet>Oppdal</beliggenhet>
 		<utleieperioden>Hele året</utleieperioden>
 		<kjøkken>Tekjøkken</kjøkken>
@@ -11,15 +11,15 @@
 		<dusj>Ja</dusj>
 		<antallsenger>5</antallsenger>
 		<pris>500</pris>
-		<hytteside>hytte1.txt</hytteside>
-		<bilde1>hund.jpg</bilde1>
-		<bilde2>hund.jpg</bilde2>
-		<bilde3>hund.jpg</bilde3>
-	</fjellhytta>
-	<fjellhytta>
+		<hytteside>hyttebeskrivelse/hytte1.txt</hytteside>
+		<bilde1>hyttebilder/1/hytte12.jpg</bilde1>
+		<bilde2>hyttebilder/1/hytte13.jpg</bilde2>
+		<bilde3>hyttebilder/1/hytte14.jpg</bilde3>
+	</Fjellhytter>
+	<Fjellhytter>
 
 		<hytteid>2</hytteid>
-		<bilde>hund.jpg</bilde>
+		<bilde>hyttebilder/2/hytte21.jpg</bilde>
 		<beliggenhet>Nerskogen</beliggenhet>
 		<utleieperioden>Vinter</utleieperioden>
 		<kjøkken>Komfyr og ovn</kjøkken>
@@ -28,15 +28,15 @@
 		<dusj>Ja</dusj>
 		<antallsenger>4</antallsenger>
 		<pris>550</pris>
-		<hytteside>hytte2.txt</hytteside>
-		<bilde1>hund.jpg</bilde1>
-		<bilde2>hund.jpg</bilde2>
-		<bilde3>hund.jpg</bilde3>
-	</fjellhytta>
+		<hytteside>hyttebeskrivelse/hytte2.txt</hytteside>
+		<bilde1>hyttebilder/2/hytte22.jpg</bilde1>
+		<bilde2>hyttebilder/2/hytte23.jpg</bilde2>
+		<bilde3>hyttebilder/2/hytte24.jpg</bilde3>
+	</Fjellhytter>
 
-	<sjohytta>
+	<Sjohytter>
 		<hytteid> 3 </hytteid>
-		<bilde>hund.jpg</bilde>
+		<bilde>hyttebilder/3/hytte31.jpg</bilde>
 		<beliggenhet>Hitra</beliggenhet>
 		<utleieperioden>Mai-Oktober</utleieperioden>
 		<kjøkken>Komfyr, kjøleskap</kjøkken>
@@ -45,15 +45,15 @@
 		<dusj>Nei</dusj>
 		<antallsenger>4</antallsenger>
 		<pris>750</pris>		
-		<hytteside></hytteside>
-		<bilde1>hund.jpg</bilde1>
-		<bilde2>hund.jpg</bilde2>
-		<bilde3>hund.jpg</bilde3>
-	</sjohytta>
+		<hytteside>/hyttebeskrivelse/hytte3.txt</hytteside>
+		<bilde1>hyttebilder/3/hytte32.jpg</bilde1>
+		<bilde2>hyttebilder/3/hytte33.jpg</bilde2>
+		<bilde3>hyttebilder/3/hytte34.jpg</bilde3>
+	</Sjohytter>
 
-	<skogshytta>
+	<Skogshytter>
 		<hytteid> 4 </hytteid>
-		<bilde>hund.jpg</bilde>
+		<bilde>hyttebilder/4/hytte41.jpeg</bilde>
 		<beliggenhet>Den store skogen</beliggenhet>
 		<utleieperioden>Hele året</utleieperioden>
 		<kjøkken>Enkel tekjøkken. Gas</kjøkken>
@@ -62,15 +62,15 @@
 		<dusj>Nei</dusj>
 		<antallsenger>8</antallsenger>
 		<pris>500</pris>
-		<hytteside></hytteside>
-		<bilde1>hund.jpg</bilde1>
-		<bilde2>hund.jpg</bilde2>
-		<bilde3>hund.jpg</bilde3>
-	</skogshytta>
+		<hytteside>/hyttebeskrivelse/hytte4.txt</hytteside>
+		<bilde1>hyttebilder/4/hytte42.jpg</bilde1>
+		<bilde2>hyttebilder/4/hytte43.jpg</bilde2>
+		<bilde3>hyttebilder/4/hytte44.jpg</bilde3>
+	</Skogshytter>
 
-	<skogshytta>
+	<Skogshytter>
 		<hytteid> 5 </hytteid>
-		<bilde>hund.jpg</bilde>
+		<bilde>hyttebilder/5/hytte51.jpeg</bilde>
 		<beliggenhet>Den lille skogen</beliggenhet>
 		<utleieperioden>Hele året</utleieperioden>
 		<kjøkken>Ovn, komfyr, mikro</kjøkken>
@@ -79,15 +79,15 @@
 		<dusj>Nei</dusj>
 		<antallsenger>10</antallsenger>
 		<pris>700</pris>
-		<hytteside></hytteside>
-		<bilde1>hund.jpg</bilde1>
-		<bilde2>hund.jpg</bilde2>
-		<bilde3>hund.jpg</bilde3>
-	</skogshytta>
+		<hytteside>hyttebeskrivelse/hytte5.txt</hytteside>
+		<bilde1>hyttebilder/5/hytte52.jpeg</bilde1>
+		<bilde2>hyttebilder/5/hytte53.jpeg</bilde2>
+		<bilde3>hyttebilder/5/hytte54.jpeg</bilde3>
+	</Skogshytter>
 
-<fjellhytta>
+<Fjellhytter>
 	   <hytteid> 6 </hytteid>
-		<bilde>hund.jpg</bilde>
+		<bilde>hyttebilder/6/hytte61.jpg</bilde>
 		<beliggenhet>Røros</beliggenhet>
 		<utleieperioden>Hele året</utleieperioden>
 		<kjøkken>Kjøleskap, ovn, komfyr</kjøkken>
@@ -96,15 +96,15 @@
 		<dusj>Nei</dusj>
 		<antallsenger>4</antallsenger>
 		<pris>300</pris>
-		<hytteside></hytteside>
-		<bilde1>hund.jpg</bilde1>
-		<bilde2>hund.jpg</bilde2>
-		<bilde3>hund.jpg</bilde3>
-	</fjellhytta>
+		<hytteside>hyttebeskrivelse/hytte6.txt</hytteside>
+		<bilde1>hyttebilder/6/hytte62.jpg</bilde1>
+		<bilde2>hyttebilder/6/hytte63.jpg</bilde2>
+		<bilde3>hyttebilder/6/hytte64.jpg</bilde3>
+	</Fjellhytter>
 
-	<sjohytta>
+	<Sjohytter>
 		<hytteid> 7 </hytteid>
-		<bilde>hund.jpg</bilde>
+		<bilde>hyttebilder/7/hytte71.jpg</bilde>
 		<beliggenhet>Storøya</beliggenhet>
 		<utleieperioden>Mai-September</utleieperioden>
 		<kjøkken>Ovn, komfyr, kjøleskap</kjøkken>
@@ -113,9 +113,9 @@
 		<dusj>Ja</dusj>
 		<antallsenger>6</antallsenger>
 		<pris>600</pris>
-		<hytteside></hytteside>
-		<bilde1>hund.jpg</bilde1>
-		<bilde2>hund.jpg</bilde2>
-		<bilde3>hund.jpg</bilde3>
-	</sjohytta>
+		<hytteside>hyttebeskrivelse/hytte7.txt</hytteside>
+		<bilde1>hyttebilder/7/hytte72.jpg</bilde1>
+		<bilde2>hyttebilder/7/hytte73.jpg</bilde2>
+		<bilde3>hyttebilder/7/hytte74.jpg</bilde3>
+	</Sjohytter>
 </hyttekatalog>

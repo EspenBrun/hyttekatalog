@@ -55,3 +55,12 @@
   color: #FFF;
 }
 
+.katalogbildet {
+	float: left;
+}
+.boxed {
+	border: 1px solid gray;
+	width: 400 ;
+	height: 300;
+	position: right;
+}

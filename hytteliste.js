@@ -18,8 +18,8 @@ $(document).ready(function(){
 
 		success: function(xml) {
 			$(xml).find(hyttetype).each(function(){
-				txt += "<hr>" + "<p><img src='" + $(this).find("bilde").text()+ "' height = 50 width = 40 ></p>" + "<br>" + 
-				"Beliggenhet: " + $(this).find("beliggenhet").text() + "<br>" +
+				txt += "<hr>" + "<p><img src='" + $(this).find("bilde").text()+ "' class='img-responsive img-thumbnail' name='katalogbildet' width='400' height='300'>" + "<br>" + 
+				"<div class = 'boxed'> Beliggenhet: " + $(this).find("beliggenhet").text() + "<br>" +
 				"Utleieperioden: " + $(this).find("utleieperioden").text()  + "<br>" +
 			    "Kjøkken: " + $(this).find("kjøkken").text() + "<br>" +
 			    "Innlagt strøm: " + $(this).find("strøm").text() +   "<br>" +
@@ -27,8 +27,7 @@ $(document).ready(function(){
 			    "Dusj: " + $(this).find("dusj").text() +  "<br>" +
 			    "Antall senger: " + $(this).find("antallsenger").text() + "<br>" +
 			    "Pris: " + $(this).find("pris").text() + "<br>" +
-			    "her er linken" +
-			    "<a href='hyttebeskrivelse.html' id='" + $(this).find("hytteid").text() + "'>Vil du vite mer?</a>" + "<hr>"; 
+			    "<a href='hyttebeskrivelse.html' id='" + $(this).find("hytteid").text() + "'>Vil du vite mer?</a></div></p>" + "<hr>"; 
 			});
 			// Send HTMLen til dette elementet
 			$("#hytteliste").html(txt);
