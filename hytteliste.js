@@ -7,8 +7,11 @@ $(document).ready(function(){
 	// Hent informasjon om hvilken type hytter som skal vises fra enden av urlen
 	var hyttetype = window.location.hash.substring(1);
 	var txt = "";
-	var header = hyttetype;
-	$("#cabin-type-header").html(hyttetype);
+	if(hyttetype == "Sjohytter"){
+		$("#cabin-type-header").html("Sjøhytter");
+	} else {
+		$("#cabin-type-header").html(hyttetype);
+	}
 	
 	// Hent informasjon om hyttene
 	$.ajax({
