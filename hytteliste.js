@@ -23,7 +23,7 @@ $(document).ready(function(){
 			$(xml).find(hyttetype).each(function(){
 				txt += "<div class='row'>";
 				txt += "<div class='col-xs-12 col-sm-6'>";
-				txt += "<img src='" + $(this).find("bilde").text()+ "' class='img-responsive img-thumbnail'>";
+				txt += "<img src='" + $(this).find("bilde").text()+ "' class='img-responsive img-rounded' alt='Bilde av hytten'>";
 				txt += "</div>";
 				txt += "<div class='col-xs-12 col-sm-6 pull-left cabin-list-description'>";
 				txt += "Beliggenhet: " + $(this).find("beliggenhet").text();
