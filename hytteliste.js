@@ -25,7 +25,7 @@ $(document).ready(function(){
 				txt += "<div class='col-xs-12 col-sm-6'>";
 				txt += "<img src='" + $(this).find("bilde").text()+ "' class='img-responsive img-rounded' alt='Bilde av hytten'>";
 				txt += "</div>";
-				txt += "<div class='col-xs-12 col-sm-6 pull-left cabin-list-description'>";
+				txt += "<div class='col-xs-12 col-sm-6 pull-left jumbotron cabin-list-description match-parent'>";
 				txt += "Beliggenhet: " + $(this).find("beliggenhet").text();
 				txt += "<br>";
 				txt += "Utleieperioden: " + $(this).find("utleieperioden").text();
