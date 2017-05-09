@@ -1,5 +1,11 @@
 /*Styles*/
 
+.footer {
+  background-color: teal;
+  color: white;
+  padding: 0px;
+}
+
 .banner {
   min-height: 90vh;
   background-image: url(cabin_banner.jpg);
