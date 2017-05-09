@@ -3,6 +3,7 @@
 // Espen Kirkesæther Brun, Anna Nikitina og Kathinka Hoyden
 ///////////////////////////////////////////////////////////////
 
+
 $(document).ready(function(){
 	// Hent informasjon om hvilken type hytter som skal vises fra enden av urlen
 	var hyttetype = window.location.hash.substring(1);
@@ -104,5 +105,7 @@ $(document).ready(function(){
 	$('#hytteliste').on('click', '.carousel-control.right', function () {
 	  $('#myCarousel').carousel('next');
 	});
+
+	$('#footer').load('footer.html');
 });
 					
