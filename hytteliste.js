@@ -21,9 +21,52 @@ $(document).ready(function(){
 
 		success: function(xml) {
 			$(xml).find(hyttetype).each(function(){
+			console.log("the id is:" + $(this).find("hytteid").text().trim());
+
+				// Bootstrap wrappers
 				txt += "<div class='row'>";
 				txt += "<div class='col-xs-12 col-sm-6'>";
-				txt += "<img src='" + $(this).find("bilde").text()+ "' class='img-responsive img-rounded' alt='Bilde av hytten'>";
+				//
+				// Carousel
+				//
+				txt += "<div id='myCarousel" + $(this).find("hytteid").text().trim() + "' class='carousel slide' data-ride='carousel'>";
+				// Carousel indicators
+				txt += "<ol class='carousel-indicators'>";
+				txt += "<li data-target='#myCarousel" + $(this).find("hytteid").text().trim() + "' data-slide-to='0' class='active'></li>";
+				txt += "<li data-target='#myCarousel" + $(this).find("hytteid").text().trim() + "' data-slide-to='1' class='active'></li>";
+				txt += "<li data-target='#myCarousel" + $(this).find("hytteid").text().trim() + "' data-slide-to='2' class='active'></li>";
+				txt += "<li data-target='#myCarousel" + $(this).find("hytteid").text().trim() + "' data-slide-to='3' class='active'></li>";
+				txt += "</ol>";
+				// Wrapper for slides
+				txt += "<div class='carousel-inner'>";
+				// Slides
+				txt += "<div class='item active'>";
+				txt += "<img src='" + $(this).find("bilde").text()+ "' alt='Los Angeles'>";
+				txt += "</div>";
+				txt += "<div class='item'>";
+				txt += "<img src='" + $(this).find("bilde1").text()+ "' alt='Chicago'>";
+				txt += "</div>";
+				txt += "<div class='item'>";
+				txt += "<img src='" + $(this).find("bilde2").text()+ "' alt='Chicago'>";
+				txt += "</div>";
+				txt += "<div class='item'>";
+				txt += "<img src='" + $(this).find("bilde3").text()+ "' alt='New York'>";
+				txt += "</div>";
+				txt += "</div>";
+				// Left and right controls
+				txt += "<a class='left carousel-control' href='#myCarousel" + $(this).find("hytteid").text().trim() + "' data-slide='prev'>";
+				txt += "<span class='glyphicon glyphicon-chevron-left''></span>";
+				txt += "<span class='sr-only'>Previous</span>";
+				txt += "</a>";
+				txt += "<a class='right carousel-control' href='#myCarousel" + $(this).find("hytteid").text().trim() + "' data-slide='next'>";
+				txt +="<span class='glyphicon glyphicon-chevron-right'></span>";
+				txt += "<span class='sr-only'>Next</span>";
+				txt += "</a>";
+				txt += "</div>";
+				// txt += "<img src='" + $(this).find("bilde").text()+ "' class='img-responsive img-rounded' alt='Bilde av hytten'>";
+				//
+				// Description in bootstrap jumbotron
+				//
 				txt += "</div>";
 				txt += "<div class='col-xs-12 col-sm-6 pull-left jumbotron cabin-list-description match-parent'>";
 				txt += "Beliggenhet: " + $(this).find("beliggenhet").text();
@@ -42,7 +85,7 @@ $(document).ready(function(){
 				txt += "<br>";
 				txt += "Pris: " + $(this).find("pris").text();
 				txt += "<br>";
-				txt += "<a href='hyttebeskrivelse.html' id='" + $(this).find("hytteid").text() + "'>";
+				txt += "<a href='hyttebeskrivelse.html' id='" + $(this).find("hytteid").text().trim() + "'>";
 				txt += "Vil du vite mer?";
 				txt += "</a>";
 				txt += "</div>";
@@ -52,6 +95,14 @@ $(document).ready(function(){
 			// Send HTMLen til dette elementet
 			$("#hytteliste").html(txt);
 		}
+	});
+
+	$('#hytteliste').on('click', '.carousel-control.left', function () {
+	  $('#myCarousel').carousel('prev');
+	});
+
+	$('#hytteliste').on('click', '.carousel-control.right', function () {
+	  $('#myCarousel').carousel('next');
 	});
 });
 					
