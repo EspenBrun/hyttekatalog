@@ -5,6 +5,6 @@
 
 $(document).ready(function(){
 	// set in footer
-	$("#footer").load("footer.html");
+	$(".container-footer").load("footer.html");
 });
 					

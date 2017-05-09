@@ -112,6 +112,6 @@ $(document).ready(function(){
 	  $('#myCarousel').carousel('next');
 	});
 
-	$('#footer').load('footer.html');
+	$('.container-footer').load('footer.html');
 });
 					
