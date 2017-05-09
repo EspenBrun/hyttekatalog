@@ -13,7 +13,6 @@
       <script type="text/javascript" language="javascript" src="skjema_bestilling.js"></script>
       <!-- custom styles -->
       <link rel="stylesheet" type="text/css" href="styles.css">
-      <link rel="stylesheet" type="text/css" href="skjema.css">
     <title>Bestillingsskjema</title>
 
   </head>
@@ -22,55 +21,47 @@
   <body>
 
     <form name="mittSkjema"
+      id="mittSkjema"
       action="http://www.iie.hist.no/fag/webutvikling1/prosjekt/behandle.php"
       method="post"
       onSubmit="return validerSkjema();"
     >
       <h2>Bestill din hytte her:</h2>
+      <p id="container-message"></p>
       <table>
         <tr>
           <td>Navn*:</td>
-          <td><input type="text" name="navn" required/></td>
+          <td><input type="text" name="navn"/></td>
         </tr>
         <tr>
           <td>Adresse*:</td>
-          <td><input type="text" name="adresse" required/></td>
+          <td><input type="text" name="adresse"/></td>
         </tr>
         <tr>
           <td>Postnr.*:</td>
-          <td><input type="text" name="postnr" required/></td>
+          <td><input type="text" name="postnr"/></td>
         </tr>
         <tr>
           <td>Epost*:</td>
-          <td><input type="text" name="epost" required/></td>
+          <td><input type="text" name="epost"/></td>
         </tr>
         <tr>
           <td>Tlf*:</td>
-          <td><input type="text" name="tlf" required/></td>
+          <td><input type="text" name="tlf"/></td>
         </tr>
         <tr>
           <td>Ønsker å leie antall dager:*</td>
-          <td><input type="number" placeholder="1" required/></td>
-        </tr>
-        <tr>
-          <td>Ønsker å leie antall dager*:</td>
-          <td>
-            <select>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-            </select>
-          </td>
+          <td><input type="number" name="dager"/></td>
         </tr>
       </table>
       <p>
-        <input type="radio" name="svar"
-        id="positiv"/>
+        <input type="checkbox" name="medlem" value="medlem" />
         <label>Jeg er medlem av Turistforeningen og får 15% rabatt på leie av hytte.</label>
       </p>
       <input type="reset" name="knapp" value="Tilbakestill">
       <input type="submit" name="knapp" value="Send">
     </form>
     <h4>*Feltet må fylles ut!</h4>
+    <script type="text/javascript" src="valider_skjema.js"></script>
   </body>
 </html>
