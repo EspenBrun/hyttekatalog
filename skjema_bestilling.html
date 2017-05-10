@@ -1,79 +1,83 @@
 <!DOCTYPE>
 <html>
-  <head lang="no">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- bootstrap Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="bootstrap.min.css">
-      <!-- jQuery library -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-      <!-- bootstrap Latest compiled JavaScript -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <!-- logic for skjema_bestilling -->
-      <script type="text/javascript" language="javascript" src="skjema_bestilling.js"></script>
-      <!-- custom styles -->
-      <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Bestillingsskjema</title>
+<head lang="no">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="skjema.css">
+  <script type="text/javascript" language="javascript">
 
-  </head>
-  <body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-12">
-        <form name="mittSkjema"
-          id="mittSkjema"
-          action="http://www.iie.hist.no/fag/webutvikling1/prosjekt/behandle.php"
-          method="post"
-          onSubmit="return validerSkjema();"
-        >
-          <h2>Bestill din hytte her:</h2>
-          <p id="container-message"></p>
-          <table>
-            <tr>
-              <td>Navn*:</td>
-              <td><input type="text" name="navn"/></td>
-            </tr>
-            <tr>
-              <td>Adresse*:</td>
-              <td><input type="text" name="adresse"/></td>
-            </tr>
-            <tr>
-              <td>Postnr.*:</td>
-              <td><input type="text" name="postnr"/></td>
-            </tr>
-            <tr>
-              <td>Epost*:</td>
-              <td><input type="text" name="epost"/></td>
-            </tr>
-            <tr>
-              <td>Tlf*:</td>
-              <td><input type="text" name="tlf"/></td>
-            </tr>
-            <tr>
-              <td>Ønsker å leie antall dager:*</td>
-              <td><input type="number" name="dager"/></td>
-            </tr>
-            <tr>
-               <td>Ønsker å leie fra dato*:</td>
-              <td><input type="name" name="dato" required/></td>
-           </tr>
-          </table>
-          <p>
-            <input type="checkbox" name="medlem" value="medlem" />
-            <label>Jeg er medlem av Turistforeningen og får 15% rabatt på leie av hytte.</label>
+function validerSkjema(){
+  var epost = window.document.mittSkjema.epost.value;
+  if (epost.value == "") {
+    alert("skriv inn gyldig epostadresse")
+    window.document.mittSkjema.epost.focus();
+    return false;
+}
+return true;
+}
+
+
+</script>
+</header>
+</head>
+
+<title>Bestillingsskjema</title>
+
+<body>
+
+  <form name="mittSkjema"
+  action="behandle.php"
+  method="post"
+  onSubmit="return validerSkjema();"
+  >
+  <h2>Bestill din hytte her:</h2>
+
+  <table>
+<tr>
+      <td>Navn*:</td>
+      <td><input type="text" name="navn" required/></td>
+    </tr>
+
+    <tr>
+      <td>Adresse*:</td>
+      <td><input type="text" name="adresse" required/></td>
+    </tr>
+
+    <tr>
+      <td>Postnr.*:</td>
+      <td><input type="text" name="postnr" required/></td>
+    </tr>
+
+    <tr>
+      <td>Epost*:</td>
+      <td><input type="email" name="epost" required/></td>
+    </tr>
+
+    <tr>
+      <td>Tlf*:</td>
+      <td><input type="text" name="tlf" required/></td>
+</tr>
+
+<tr>
+        <td>Ønsker å leie antall dager:*</td>
+        <td><input type="number" placeholder="1" required/></td>
+      </tr>
+
+      <tr>
+        <td>Ønsker å leie fra dato*:</td>
+        <td><input type="name" name="dato" required/></td>
+  </tr>
+
+              </table>
           </p>
-          <input type="reset" name="knapp" value="Tilbakestill">
-          <input type="submit" name="knapp" value="Send">
-        </form>
-        <h4>*Feltet må fylles ut!</h4>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid container-footer">
-    <!-- hentes fra js -->
-  </div>
 
-    
-    <script type="text/javascript" src="valider_skjema.js"></script>
+    <input type="radio" name="svar"
+    id="positiv"/>
+    <label>Jeg er medlem av Turistforeningen og får 15% rabatt på leie av hytte.</label>
+<p/>
+    <input type="reset" name="knapp" value="Tilbakestill">
+      <input type="submit" name="knapp" value="Send">
+</form>
+<p/>
+<h4>*Feltet må fylles ut!</h4>
   </body>
-</html>
+  </html>
