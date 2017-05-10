@@ -1,0 +1,73 @@
+body
+
+input[type=text]:focus {
+  width: 100%;
+  padding: 8px 40px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  -webkit-transition: 0.5s;
+  outline: none;
+
+}
+input[type=email]:focus {
+  width: 100%;
+  padding: 8px 40px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  -webkit-transition: 0.5s;
+  outline: none;
+}
+input[type=number]:focus {
+  width: 100%;
+  padding: 8px 40px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  -webkit-transition: 0.5s;
+  outline: none;
+}
+input[type=name]:focus {
+  width: 100%;
+  padding: 8px 40px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  -webkit-transition: 0.5s;
+  outline: none;
+}
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+input[type=reset] {
+    width: 80%;
+    background-color: #008080;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit] {
+    width: 80%;
+    background-color: #008080;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=reset]:hover {
+  background-color: #004d4d;
+}
+input[type=submit]:hover {
+  background-color: #004d4d;
+}
+div {
+    border-radius: 5px;
+    background-color: #004d4d;
+    padding: 20px;
+}
