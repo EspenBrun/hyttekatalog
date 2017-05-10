@@ -1,6 +1,6 @@
 /*Styles*/
 
-#footer {
+.container-footer {
   background-color: teal;
   color: white;
   padding: 0px;
@@ -68,4 +68,8 @@
 .cabin-list-description {
   padding-top: 30px;
   padding-bottom: 40px;
+}
+
+#container-message {
+  color: red;
 }

@@ -86,7 +86,7 @@ $(document).ready(function(){
 				txt += "<br>";
 				txt += "Pris: " + $(this).find("pris").text();
 				txt += "<br>";
-				txt += "<a href='hyttebeskrivelse.html' id='" + $(this).find("hytteid").text().trim() + "'>";
+				txt += "<a href='#' class='eihytte' id='" + $(this).find("hytteid").text().trim() + "'>";
 				txt += "Vil du vite mer?";
 				txt += "</a>";
 				txt += "</div>";
@@ -98,6 +98,12 @@ $(document).ready(function(){
 		}
 	});
 
+	$('#hytteliste').on('click', '.eihytte', function (e) {
+	    e.preventDefault(); // hindre default oppførsel for browseren ved klikk
+		var hytteid = this.id;
+		window.location.href = 'eihytte.html#' + hyttetype + ';' + hytteid;
+	});
+
 	$('#hytteliste').on('click', '.carousel-control.left', function () {
 	  $('#myCarousel').carousel('prev');
 	});
@@ -106,6 +112,6 @@ $(document).ready(function(){
 	  $('#myCarousel').carousel('next');
 	});
 
-	$('#footer').load('footer.html');
+	$('.container-footer').load('footer.html');
 });
 					
