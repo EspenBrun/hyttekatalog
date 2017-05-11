@@ -14,8 +14,9 @@
 		<hytteside>hyttebeskrivelse/hytte1.txt</hytteside>
 		<bilde1>hyttebilder/1/hytte12.jpg</bilde1>
 		<bilde2>hyttebilder/1/hytte13.jpg</bilde2>
-		<bilde3>hyttebilder/1/hytte14.jpg</bilde3>		<varet>http://www.yr.no/sted/Norge/S%c3%b8r-Tr%c3%b8ndelag/Oppdal/Oppdal/ekstern_boks_tre_dager.html</varet>
-	<tur>https://www.ut.no/finn/?q=oppdal</tur>
+		<bilde3>hyttebilder/1/hytte14.jpg</bilde3>
+		<varet>http://www.yr.no/sted/Norge/S%c3%b8r-Tr%c3%b8ndelag/Oppdal/Oppdal/ekstern_boks_tre_dager.html</varet>
+		<tur>https://www.ut.no/finn/?q=oppdal</tur>
 	</Fjellhytter>
 	<Fjellhytter>
 
@@ -32,7 +33,8 @@
 		<hytteside>hyttebeskrivelse/hytte2.txt</hytteside>
 		<bilde1>hyttebilder/2/hytte22.jpg</bilde1>
 		<bilde2>hyttebilder/2/hytte23.jpg</bilde2>
-		<bilde3>hyttebilder/2/hytte24.jpg</bilde3>		<varet>http://www.yr.no/sted/Norge/S%c3%b8r-Tr%c3%b8ndelag/Rennebu/Nerskogen/ekstern_boks_tre_dager.html</varet>
+		<bilde3>hyttebilder/2/hytte24.jpg</bilde3>
+		<varet>http://www.yr.no/sted/Norge/S%c3%b8r-Tr%c3%b8ndelag/Rennebu/Nerskogen/ekstern_boks_tre_dager.html</varet>
 		<tur>https://www.ut.no/sted/5.200637/</tur>
 	</Fjellhytter>
 
@@ -50,7 +52,8 @@
 		<hytteside>hyttebeskrivelse/hytte3.txt</hytteside>
 		<bilde1>hyttebilder/3/hytte32.jpg</bilde1>
 		<bilde2>hyttebilder/3/hytte33.jpg</bilde2>
-		<bilde3>hyttebilder/3/hytte34.jpg</bilde3>		<varet>http://www.yr.no/sted/Norge/S%c3%b8r-Tr%c3%b8ndelag/Hitra/Hitra/ekstern_boks_tre_dager.html</varet>
+		<bilde3>hyttebilder/3/hytte34.jpg</bilde3>
+		<varet>http://www.yr.no/sted/Norge/S%c3%b8r-Tr%c3%b8ndelag/Hitra/Hitra/ekstern_boks_tre_dager.html</varet>
 		<tur>https://www.ut.no/finn/?q=hitra</tur>
 	</Sjohytter>
 
@@ -68,8 +71,9 @@
 		<hytteside>hyttebeskrivelse/hytte4.txt</hytteside>
 		<bilde1>hyttebilder/4/hytte42.jpg</bilde1>
 		<bilde2>hyttebilder/4/hytte43.jpg</bilde2>
-		<bilde3>hyttebilder/4/hytte44.jpg</bilde3>		<varet>http://www.yr.no/sted/Norge/S%c3%b8r-Tr%c3%b8ndelag/Bjugn/Bjugn/ekstern_boks_tre_dager.html</varet>
-				<tur>https://www.ut.no/finn/?q=bjugn</tur>
+		<bilde3>hyttebilder/4/hytte44.jpg</bilde3>
+		<varet>http://www.yr.no/sted/Norge/S%c3%b8r-Tr%c3%b8ndelag/Bjugn/Bjugn/ekstern_boks_tre_dager.html</varet>
+		<tur>https://www.ut.no/finn/?q=bjugn</tur>
 		
 	</Skogshytter>
 
@@ -87,7 +91,8 @@
 		<hytteside>hyttebeskrivelse/hytte5.txt</hytteside>
 		<bilde1>hyttebilder/5/hytte52.jpeg</bilde1>
 		<bilde2>hyttebilder/5/hytte53.jpeg</bilde2>
-		<bilde3>hyttebilder/5/hytte54.jpeg</bilde3>		<varet>http://www.yr.no/sted/Norge/S%c3%b8r-Tr%c3%b8ndelag/Selbu/Selbu/ekstern_boks_tre_dager.html</varet>
+		<bilde3>hyttebilder/5/hytte54.jpeg</bilde3>
+		<varet>http://www.yr.no/sted/Norge/S%c3%b8r-Tr%c3%b8ndelag/Selbu/Selbu/ekstern_boks_tre_dager.html</varet>
 		<tur>https://www.ut.no/finn/?q=selbu</tur>
 	</Skogshytter>
 
@@ -105,7 +110,8 @@
 		<hytteside>hyttebeskrivelse/hytte6.txt</hytteside>
 		<bilde1>hyttebilder/6/hytte62.jpg</bilde1>
 		<bilde2>hyttebilder/6/hytte63.jpg</bilde2>
-		<bilde3>hyttebilder/6/hytte64.jpg</bilde3>				<varet>http://www.yr.no/sted/Norge/Sør-Trøndelag/Selbu/Selbu/ekstern_boks_tre_dager.js</varet>
+		<bilde3>hyttebilder/6/hytte64.jpg</bilde3>
+		<varet>http://www.yr.no/sted/Norge/Sør-Trøndelag/Selbu/Selbu/ekstern_boks_tre_dager.js</varet>
 		<tur>https://www.ut.no/finn/?q=røros</tur>
 	</Fjellhytter>
 
@@ -124,7 +130,7 @@
 		<bilde1>hyttebilder/7/hytte72.jpg</bilde1>
 		<bilde2>hyttebilder/7/hytte73.jpg</bilde2>
 		<bilde3>hyttebilder/7/hytte74.jpg</bilde3>
-<varet>http://www.yr.no/sted/Norge/Nord-Tr%c3%b8ndelag/Levanger/Ytter%c3%b8y/ekstern_boks_tre_dager.html</varet>
-<tur>https://www.ut.no/finn/?q=ytterøy</tur>
+		<varet>http://www.yr.no/sted/Norge/Nord-Tr%c3%b8ndelag/Levanger/Ytter%c3%b8y/ekstern_boks_tre_dager.html</varet>
+		<tur>https://www.ut.no/finn/?q=ytterøy</tur>
 	</Sjohytter>
 </hyttekatalog>
