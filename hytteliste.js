@@ -96,6 +96,8 @@ $(document).ready(function(){
 		}
 	});
 
+	// manually attach click events in image carousel.
+	// necessary since the carousel is inserted with ajax
 	$('#hytteliste').on('click', '.carousel-control.left', function () {
 	  $('#myCarousel').carousel('prev');
 	});
@@ -103,7 +105,7 @@ $(document).ready(function(){
 	$('#hytteliste').on('click', '.carousel-control.right', function () {
 	  $('#myCarousel').carousel('next');
 	});
-	
+
 	$('#hytteliste').on('click', '.eihytte', function (e) {
 	    e.preventDefault(); // hindre default oppførsel for browseren ved klikk
 		var hytteid = this.id;
