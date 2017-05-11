@@ -140,6 +140,7 @@ $(document).ready(function(){
 		window.location.href = 'skjema_bestilling.html#' + id;
 
 	});
-			
+	
+	$(".container-navbar").load("navbar.html");		
 });
 			
