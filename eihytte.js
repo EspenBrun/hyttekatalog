@@ -74,52 +74,55 @@ $(document).ready(function(){
 					myMap(coordinate, location);
 				});
 
-				//dp
+//Datepicker
 
-				events = [ 
-				    { Title: "Opptat", Date: new Date("05/05/2017") }, 
-				   { Title: "Stengt", Date: new Date("03/05/2017") }];
-
-
-				$("#datepicker").datepicker({
+var events ={};
+events = [{ Title: "Opptatt", Date: new Date("05/05/2017") },{ Title: "Opptatt", Date: new Date("06/05/2017")},{ Title: "Opptatt", Date: new Date("05/13/2017") } ];
 
 
-					beforeShowDay: function(date) {
-					    var result = [true, '', null];
-					    var matching = $.grep(events, function(event) {
-					        return event.Date.valueOf() === date.valueOf();
-					    });
+$("#datepicker").datepicker({
 
-					    if (matching.length) {
-					        result = [true, 'highlight', null];
-					    }
-					    return result;
-					}/*,
+//dateFormat: 'MM-dd-yyyy',
+beforeShowDay: function(date) {
+    var result = [true, '', null];
+    var matching = $.grep(events, function(event) {
+        return event.Date.valueOf() === date.valueOf();
+    });
+    
+    if (matching.length) {
+        result = [true, 'highlight', null];
+    }
+    return result;
+},
 
-					onSelect: function(dateText) {
-					    var date,
-					        selectedDate = new Date(dateText),
-					        i = 0,
-					        event = null;*/
+onSelect: function(dateText) {
+    	var date,
+        selectedDate = new Date(dateText),
+        i = 0,
+        event = null;
 
-					    /* Determine if the user clicked an event: */
-					 /*   while (i < events.length && !event) {
-					        date = events[i].Date;
+   /* Determine if the user clicked an event: */
+   while (i < events.length && !event) {
+        date = events[i].Date;
 
-					        if (selectedDate.valueOf() === date.valueOf()) {
-					            event = events[i];
-					        }
-					        i++;
-					    }
-					    if (event) {
-					        /* If the event is defined, perform some action here; show a tooltip, navigate to a URL, etc. */
-					    /*    alert(event.Title);
-					    }
+        if (selectedDate.valueOf() === date.valueOf()) {
+            event = events[i];
+        }
+        i++;
+    }
+    if (event) {
+        /* If the event is defined, perform some action here; show a tooltip, navigate to a URL, etc. */
+       alert(event.Title);
+    		}
+    else{
+   dt = selectedDate;
+     alert(dt);
+    		}
 
-					}*/
-				}); 
+	}
+}); 
 
-				//enddp
+//Datepicker_end
 			}
 		});
 	}
