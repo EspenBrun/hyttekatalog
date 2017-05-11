@@ -42,6 +42,9 @@ $(document).ready(function(){
 	searchXML();
 
 
+	
+
+
 	$(".btn-order").click(function(e){
 		e.preventDefault(); 
 		window.location.href = 'skjema_bestilling.html#' + id;
