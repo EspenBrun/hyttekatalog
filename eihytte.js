@@ -42,6 +42,35 @@ $(document).ready(function(){
 	searchXML();
 
 
+	// Make the gooogle maps map given a coordinate
+	function myMap() {
+	  var myLatLng = {lat: -25.363, lng: 131.044};
+
+	  var map = new google.maps.Map(document.getElementById('map'), {
+	    zoom: 4,
+	    center: myLatLng
+	  });
+
+	  var marker = new google.maps.Marker({
+	    position: myLatLng,
+	    map: map,
+	    title: 'Hello World!'
+	  });
+	}
+
+	// get the permission from google to use their api
+	$.getScript( "https://maps.googleapis.com/maps/api/js?key=AIzaSyDa93KkD81ZVZXuMQREmIt8uGoonBWEIe0" )
+	  .done(function( script, textStatus ) {
+	    console.log( textStatus );
+	    myMap();
+	  })
+	  .fail(function( jqxhr, settings, exception ) {
+	    $( ".container-script" ).text( "Triggered ajaxError handler." );
+	});
+	// var script = document.createElement( 'script' );
+	// script.type = 'text/javascript';
+	// script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDa93KkD81ZVZXuMQREmIt8uGoonBWEIe0&callback=myMap';
+	// $("#container-script").append( script );
 	
 
 
