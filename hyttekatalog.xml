@@ -17,9 +17,10 @@
 		<bilde3>hyttebilder/1/hytte14.jpg</bilde3>
 		<varet>http://www.yr.no/sted/Norge/S%c3%b8r-Tr%c3%b8ndelag/Oppdal/Oppdal/ekstern_boks_tre_dager.html</varet>
 		<tur>https://www.ut.no/finn/?q=oppdal</tur>
+		<koordinat>62.610954:9.645684</koordinat>
 	</Fjellhytter>
-	<Fjellhytter>
 
+	<Fjellhytter>
 		<hytteid>2</hytteid>
 		<bilde>hyttebilder/2/hytte21.jpg</bilde>
 		<beliggenhet>Nerskogen</beliggenhet>
@@ -35,7 +36,8 @@
 		<bilde2>hyttebilder/2/hytte23.jpg</bilde2>
 		<bilde3>hyttebilder/2/hytte24.jpg</bilde3>
 		<varet>http://www.yr.no/sted/Norge/S%c3%b8r-Tr%c3%b8ndelag/Rennebu/Nerskogen/ekstern_boks_tre_dager.html</varet>
-		<tur>https://www.ut.no/sted/5.200637/</tur>
+		<tur>https://www.ut.no/sted/5.200637/</tur>		
+		<koordinat>62.874830:9.789703</koordinat>
 	</Fjellhytter>
 
 	<Sjohytter>
@@ -55,6 +57,7 @@
 		<bilde3>hyttebilder/3/hytte34.jpg</bilde3>
 		<varet>http://www.yr.no/sted/Norge/S%c3%b8r-Tr%c3%b8ndelag/Hitra/Hitra/ekstern_boks_tre_dager.html</varet>
 		<tur>https://www.ut.no/finn/?q=hitra</tur>
+		<koordinat>63.526957:8.754001</koordinat>
 	</Sjohytter>
 
 	<Skogshytter>
@@ -74,7 +77,7 @@
 		<bilde3>hyttebilder/4/hytte44.jpg</bilde3>
 		<varet>http://www.yr.no/sted/Norge/S%c3%b8r-Tr%c3%b8ndelag/Bjugn/Bjugn/ekstern_boks_tre_dager.html</varet>
 		<tur>https://www.ut.no/finn/?q=bjugn</tur>
-		
+		<koordinat>63.811244:9.722632</koordinat>
 	</Skogshytter>
 
 	<Skogshytter>
@@ -94,6 +97,7 @@
 		<bilde3>hyttebilder/5/hytte54.jpeg</bilde3>
 		<varet>http://www.yr.no/sted/Norge/S%c3%b8r-Tr%c3%b8ndelag/Selbu/Selbu/ekstern_boks_tre_dager.html</varet>
 		<tur>https://www.ut.no/finn/?q=selbu</tur>
+		<koordinat>63.221095:10.986964</koordinat>
 	</Skogshytter>
 
 <Fjellhytter>
@@ -113,6 +117,7 @@
 		<bilde3>hyttebilder/6/hytte64.jpg</bilde3>
 		<varet>http://www.yr.no/sted/Norge/Sør-Trøndelag/Selbu/Selbu/ekstern_boks_tre_dager.js</varet>
 		<tur>https://www.ut.no/finn/?q=røros</tur>
+		<koordinat>63.226025:11.052509</koordinat>
 	</Fjellhytter>
 
 	<Sjohytter>
@@ -132,5 +137,6 @@
 		<bilde3>hyttebilder/7/hytte74.jpg</bilde3>
 		<varet>http://www.yr.no/sted/Norge/Nord-Tr%c3%b8ndelag/Levanger/Ytter%c3%b8y/ekstern_boks_tre_dager.html</varet>
 		<tur>https://www.ut.no/finn/?q=ytterøy</tur>
+		<koordinat>63.801878:11.131839</koordinat>
 	</Sjohytter>
 </hyttekatalog>
