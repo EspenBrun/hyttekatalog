@@ -14,7 +14,8 @@
 		<hytteside>hyttebeskrivelse/hytte1.txt</hytteside>
 		<bilde1>hyttebilder/1/hytte12.jpg</bilde1>
 		<bilde2>hyttebilder/1/hytte13.jpg</bilde2>
-		<bilde3>hyttebilder/1/hytte14.jpg</bilde3>
+		<bilde3>hyttebilder/1/hytte14.jpg</bilde3>		<varet>http://www.yr.no/sted/Norge/S%c3%b8r-Tr%c3%b8ndelag/Oppdal/Oppdal/ekstern_boks_tre_dager.html</varet>
+	<tur>https://www.ut.no/finn/?q=oppdal</tur>
 	</Fjellhytter>
 	<Fjellhytter>
 
@@ -31,7 +32,8 @@
 		<hytteside>hyttebeskrivelse/hytte2.txt</hytteside>
 		<bilde1>hyttebilder/2/hytte22.jpg</bilde1>
 		<bilde2>hyttebilder/2/hytte23.jpg</bilde2>
-		<bilde3>hyttebilder/2/hytte24.jpg</bilde3>
+		<bilde3>hyttebilder/2/hytte24.jpg</bilde3>		<varet>http://www.yr.no/sted/Norge/S%c3%b8r-Tr%c3%b8ndelag/Rennebu/Nerskogen/ekstern_boks_tre_dager.html</varet>
+		<tur>https://www.ut.no/sted/5.200637/</tur>
 	</Fjellhytter>
 
 	<Sjohytter>
@@ -39,16 +41,17 @@
 		<bilde>hyttebilder/3/hytte31.jpg</bilde>
 		<beliggenhet>Hitra</beliggenhet>
 		<utleieperioden>Mai-Oktober</utleieperioden>
-		<kjøkken>Komfyr, kjøleskap</kjøkken>
+		<kjøkken>Komfyr kjøleskap</kjøkken>
 		<strøm> Ja </strøm>
 		<innlagtvann>Ja</innlagtvann>
 		<dusj>Nei</dusj>
 		<antallsenger>4</antallsenger>
 		<pris>750</pris>		
-		<hytteside>/hyttebeskrivelse/hytte3.txt</hytteside>
+		<hytteside>hyttebeskrivelse/hytte3.txt</hytteside>
 		<bilde1>hyttebilder/3/hytte32.jpg</bilde1>
 		<bilde2>hyttebilder/3/hytte33.jpg</bilde2>
-		<bilde3>hyttebilder/3/hytte34.jpg</bilde3>
+		<bilde3>hyttebilder/3/hytte34.jpg</bilde3>		<varet>http://www.yr.no/sted/Norge/S%c3%b8r-Tr%c3%b8ndelag/Hitra/Hitra/ekstern_boks_tre_dager.html</varet>
+		<tur>https://www.ut.no/finn/?q=hitra</tur>
 	</Sjohytter>
 
 	<Skogshytter>
@@ -62,10 +65,12 @@
 		<dusj>Nei</dusj>
 		<antallsenger>8</antallsenger>
 		<pris>500</pris>
-		<hytteside>/hyttebeskrivelse/hytte4.txt</hytteside>
+		<hytteside>hyttebeskrivelse/hytte4.txt</hytteside>
 		<bilde1>hyttebilder/4/hytte42.jpg</bilde1>
 		<bilde2>hyttebilder/4/hytte43.jpg</bilde2>
-		<bilde3>hyttebilder/4/hytte44.jpg</bilde3>
+		<bilde3>hyttebilder/4/hytte44.jpg</bilde3>		<varet>http://www.yr.no/sted/Norge/S%c3%b8r-Tr%c3%b8ndelag/Bjugn/Bjugn/ekstern_boks_tre_dager.html</varet>
+				<tur>https://www.ut.no/finn/?q=bjugn</tur>
+		
 	</Skogshytter>
 
 	<Skogshytter>
@@ -73,7 +78,7 @@
 		<bilde>hyttebilder/5/hytte51.jpeg</bilde>
 		<beliggenhet>Den lille skogen</beliggenhet>
 		<utleieperioden>Hele året</utleieperioden>
-		<kjøkken>Ovn, komfyr, mikro</kjøkken>
+		<kjøkken>Ovn komfyr mikro</kjøkken>
 		<strøm>Ja</strøm>
 		<innlagtvann>Ja</innlagtvann>
 		<dusj>Nei</dusj>
@@ -82,7 +87,8 @@
 		<hytteside>hyttebeskrivelse/hytte5.txt</hytteside>
 		<bilde1>hyttebilder/5/hytte52.jpeg</bilde1>
 		<bilde2>hyttebilder/5/hytte53.jpeg</bilde2>
-		<bilde3>hyttebilder/5/hytte54.jpeg</bilde3>
+		<bilde3>hyttebilder/5/hytte54.jpeg</bilde3>		<varet>http://www.yr.no/sted/Norge/S%c3%b8r-Tr%c3%b8ndelag/Selbu/Selbu/ekstern_boks_tre_dager.html</varet>
+		<tur>https://www.ut.no/finn/?q=selbu</tur>
 	</Skogshytter>
 
 <Fjellhytter>
@@ -90,7 +96,7 @@
 		<bilde>hyttebilder/6/hytte61.jpg</bilde>
 		<beliggenhet>Røros</beliggenhet>
 		<utleieperioden>Hele året</utleieperioden>
-		<kjøkken>Kjøleskap, ovn, komfyr</kjøkken>
+		<kjøkken>Kjøleskap ovn komfyr</kjøkken>
 		<strøm>Ja</strøm>
 		<innlagtvann>Nei</innlagtvann>
 		<dusj>Nei</dusj>
@@ -99,15 +105,16 @@
 		<hytteside>hyttebeskrivelse/hytte6.txt</hytteside>
 		<bilde1>hyttebilder/6/hytte62.jpg</bilde1>
 		<bilde2>hyttebilder/6/hytte63.jpg</bilde2>
-		<bilde3>hyttebilder/6/hytte64.jpg</bilde3>
+		<bilde3>hyttebilder/6/hytte64.jpg</bilde3>				<varet>http://www.yr.no/sted/Norge/Sør-Trøndelag/Selbu/Selbu/ekstern_boks_tre_dager.js</varet>
+		<tur>https://www.ut.no/finn/?q=røros</tur>
 	</Fjellhytter>
 
 	<Sjohytter>
 		<hytteid> 7 </hytteid>
 		<bilde>hyttebilder/7/hytte71.jpg</bilde>
-		<beliggenhet>Storøya</beliggenhet>
+		<beliggenhet>Ytterrøy</beliggenhet>
 		<utleieperioden>Mai-September</utleieperioden>
-		<kjøkken>Ovn, komfyr, kjøleskap</kjøkken>
+		<kjøkken>Ovn komfyr kjøleskap</kjøkken>
 		<strøm>Ja</strøm>
 		<innlagtvann>Ja</innlagtvann>
 		<dusj>Ja</dusj>
@@ -117,5 +124,7 @@
 		<bilde1>hyttebilder/7/hytte72.jpg</bilde1>
 		<bilde2>hyttebilder/7/hytte73.jpg</bilde2>
 		<bilde3>hyttebilder/7/hytte74.jpg</bilde3>
+<varet>http://www.yr.no/sted/Norge/Nord-Tr%c3%b8ndelag/Levanger/Ytter%c3%b8y/ekstern_boks_tre_dager.html</varet>
+<tur>https://www.ut.no/finn/?q=ytterøy</tur>
 	</Sjohytter>
 </hyttekatalog>
