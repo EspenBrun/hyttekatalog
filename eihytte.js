@@ -10,14 +10,11 @@ $(document).ready(function(){
 	var hyttetype = substringArray[1];
 	var myXML;
 	var txt;
-  var tur;
+	var tur;
 	var info;
 	var varet;
 	var txtArr;
 	var events;
-  // these two must be specified for the google maps, now hardcoded...
-	var coordinate = {lat: -25.363, lng: 131.044};
-	var location = "Oppdal";
 		
 	// Hent informasjon om hytta
 	function searchXML(){
@@ -35,44 +32,6 @@ $(document).ready(function(){
 		txt = myXML.children().map(function(){
 		return $(this).text() + ',';		
 		}).get().join(' ');
-
-		
-		
-		$("#eihytte").html("<p>"+txt+"</p>");
-		
-			}						
-		});										
-	}			// Send HTMLen til dette elementet	
-	searchXML();
-
-
-	// Make the gooogle maps map
-	function myMap(coordinate, text) {
-
-	  var map = new google.maps.Map(document.getElementById('map'), {
-	    zoom: 4,
-	    center: coordinate
-	  });
-
-	  var marker = new google.maps.Marker({
-	    position: coordinate,
-	    map: map,
-	    title: text
-	  });
-	}
-
-	// get the permission from google to use their api
-	$.getScript( "https://maps.googleapis.com/maps/api/js?key=AIzaSyDa93KkD81ZVZXuMQREmIt8uGoonBWEIe0" )
-	  .done(function( script, textStatus ) {
-	    myMap(coordinate, location);
-	  });
-
-	// order button
-	$(".btn-order").click(function(e){
-		e.preventDefault(); 
-		window.location.href = 'skjema_bestilling.html#' + id;
-
-	});
 				
 		txtArr = txt.split(',');
 		console.log('txtArr:' + txtArr);

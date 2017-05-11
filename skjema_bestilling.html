@@ -12,8 +12,7 @@
       <!-- logic for skjema_bestilling -->
       <script type="text/javascript" language="javascript" src="skjema_bestilling.js"></script>
       <!-- custom styles -->
-      <link rel="stylesheet" type="text/css" href="styles.css">
-      <link rel="stylesheet" type="text/css" href="skjema.css">
+      <link rel="stylesheet" type="text/css" href="styles.css" href="skjema.css">
     <title>Bestillingsskjema</title>
 
   </head>
@@ -22,7 +21,7 @@
   <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-xs-12 container-form">
+      <div class="col-xs-12">
         <form name="mittSkjema"
           id="mittSkjema"
           action="http://www.iie.hist.no/fag/webutvikling1/prosjekt/behandle.php"
@@ -32,10 +31,6 @@
           <h2>Bestill din hytte her:</h2>
           <p id="container-message"></p>
           <table>
-            <tr>
-              <td>Din hyttes unike id:</td>
-              <td><input type="text" name="hytteid" readonly/></td>
-            </tr>
             <tr>
               <td>Navn*:</td>
               <td><input type="text" name="navn"/></td>
@@ -57,10 +52,6 @@
               <td><input type="text" name="tlf"/></td>
             </tr>
             <tr>
-              <td>Ønsker å leie fra dato:*</td>
-              <td><input type="date" name="dato"/></td>
-            </tr>
-            <tr>
               <td>Ønsker å leie antall dager:*</td>
               <td><input type="number" name="dager"/></td>
             </tr>
@@ -75,7 +66,7 @@
         <h4>*Feltet må fylles ut!</h4>
       </div>
     </div>
-  <!-- </div> -->
+  </div>
   <div class="container-fluid container-footer">
     <!-- hentes fra js -->
   </div>
