@@ -44,7 +44,7 @@ $(document).ready(function(){
 
 	$(".btn-order").click(function(e){
 		e.preventDefault(); 
-		window.location.href = 'skjema_bestilling.html';
+		window.location.href = 'skjema_bestilling.html#' + id;
 
 	});
 			
