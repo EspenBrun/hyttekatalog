@@ -15,6 +15,7 @@ $(document).ready(function(){
 		window.location.href = 'hytteliste.html#'+hyttetype;
 	});
 
+	$(".container-navbar").load("navbar.html");
 	$(".container-footer").load("footer.html");
 });
 					
