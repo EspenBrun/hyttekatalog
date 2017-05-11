@@ -13,6 +13,9 @@ $(document).ready(function(){
 	var result;
 	var header = id;
 	var test;
+	// these two must be specified for the google maps, now hardcoded...
+	var coordinate = {lat: -25.363, lng: 131.044};
+	var location = "Oppdal";
 	
 	$("#cabin-type-header").html(id);
 		
@@ -42,38 +45,28 @@ $(document).ready(function(){
 	searchXML();
 
 
-	// Make the gooogle maps map given a coordinate
-	function myMap() {
-	  var myLatLng = {lat: -25.363, lng: 131.044};
+	// Make the gooogle maps map
+	function myMap(coordinate, text) {
 
 	  var map = new google.maps.Map(document.getElementById('map'), {
 	    zoom: 4,
-	    center: myLatLng
+	    center: coordinate
 	  });
 
 	  var marker = new google.maps.Marker({
-	    position: myLatLng,
+	    position: coordinate,
 	    map: map,
-	    title: 'Hello World!'
+	    title: text
 	  });
 	}
 
 	// get the permission from google to use their api
 	$.getScript( "https://maps.googleapis.com/maps/api/js?key=AIzaSyDa93KkD81ZVZXuMQREmIt8uGoonBWEIe0" )
 	  .done(function( script, textStatus ) {
-	    console.log( textStatus );
-	    myMap();
-	  })
-	  .fail(function( jqxhr, settings, exception ) {
-	    $( ".container-script" ).text( "Triggered ajaxError handler." );
-	});
-	// var script = document.createElement( 'script' );
-	// script.type = 'text/javascript';
-	// script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDa93KkD81ZVZXuMQREmIt8uGoonBWEIe0&callback=myMap';
-	// $("#container-script").append( script );
-	
+	    myMap(coordinate, location);
+	  });
 
-
+	// order button
 	$(".btn-order").click(function(e){
 		e.preventDefault(); 
 		window.location.href = 'skjema_bestilling.html#' + id;
