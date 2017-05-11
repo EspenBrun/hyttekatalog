@@ -4,6 +4,21 @@
 ///////////////////////////////////////////////////////////////
 
 $(document).ready(function(){
+	// function to make the gooogle maps map
+	function myMap(coordinate, location) {
+
+	  var map = new google.maps.Map(document.getElementById('map'), {
+	    zoom: 10,
+	    center: coordinate
+	  });
+
+	  var marker = new google.maps.Marker({
+	    position: coordinate,
+	    map: map,
+	    title: location
+	  });
+	}
+
 	// Hent informasjon om hvilken type hytter som skal vises fra enden av urlen
 	var substringArray = window.location.hash.substring(1).split(',');
 	var id = substringArray[0];
@@ -15,11 +30,10 @@ $(document).ready(function(){
 	var varet;
 	var txtArr;
 	var events;
-	// these two must be specified for the google maps, now hardcoded...
-	var coordinate = {lat: -25.363, lng: 131.044};
-	var location = "Oppdal";
+	var coordinateString;
+	var location;
 		
-	// Hent informasjon om hytta
+	// Hent informasjon om hytta, rendre vær og kart
 	function searchXML(){
 		$.ajax({
 			type:"GET",
@@ -37,9 +51,12 @@ $(document).ready(function(){
 				}).get().join(' ');
 						
 				txtArr = txt.split(',');
+				location = txtArr[2].toString().trim();
 				info = txtArr[10].toString().trim();
 				vaer = txtArr[14].toString().trim();
 				tur = txtArr[15].toString().trim();
+				coordinateString = txtArr[16].toString().trim().split(':');
+				var coordinate = {lat: parseInt(coordinateString[0]), lng: parseInt(coordinateString[1])};
 								
 				varet = '\n'+ '<iframe src="'+ vaer +'" width="468" height="290" frameborder="0" style="margin: 10px 0 10px 0" scrolling="no"></iframe>\n';
 
@@ -50,6 +67,13 @@ $(document).ready(function(){
 						e.preventDefault(); // hindre default oppførsel for browseren ved klikk
 						window.location.href = tur;
 				});
+
+				// get the permission from google to use their api
+				$.getScript( "https://maps.googleapis.com/maps/api/js?key=AIzaSyDa93KkD81ZVZXuMQREmIt8uGoonBWEIe0" )
+				.done(function( script, textStatus ) {
+					myMap(coordinate, location);
+				});
+
 				//dp
 
 				events = [ 
@@ -102,26 +126,13 @@ $(document).ready(function(){
 
 	searchXML();
 
-	// Make the gooogle maps map
-	function myMap(coordinate, text) {
+	
 
-	  var map = new google.maps.Map(document.getElementById('map'), {
-	    zoom: 4,
-	    center: coordinate
-	  });
-
-	  var marker = new google.maps.Marker({
-	    position: coordinate,
-	    map: map,
-	    title: text
-	  });
-	}
-
-	// get the permission from google to use their api
-	$.getScript( "https://maps.googleapis.com/maps/api/js?key=AIzaSyDa93KkD81ZVZXuMQREmIt8uGoonBWEIe0" )
-	  .done(function( script, textStatus ) {
-	    myMap(coordinate, location);
-	  });
+	// // get the permission from google to use their api
+	// $.getScript( "https://maps.googleapis.com/maps/api/js?key=AIzaSyDa93KkD81ZVZXuMQREmIt8uGoonBWEIe0" )
+	// .done(function( script, textStatus ) {
+	// 	myMap(coordinate, location);
+	// });
 
 	// order button
 	$(".btn-order").click(function(e){
