@@ -138,7 +138,7 @@ $(document).ready(function(){
 			container.text("Du må velge en innsjekkingsdato for å bestille");
 			// container.show();
 		} else {
-			window.location.href = 'skjema_bestilling.html#' + id + ':' + dt;
+			window.location.href = 'skjema_bestilling.html#' + id.trim() + ':' + dt;
 		}
 	});
 			
