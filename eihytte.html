@@ -8,8 +8,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- bootstrap Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="bootstrap.min.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 		<!-- jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<!-- bootstrap Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<!-- hytteliste logic -->
@@ -23,10 +25,16 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<h1 id="cabin-type-header"></h1>
-					<div id="hytteid"></div>
-					hei
+					<div id="eihytte" class="main"></div>
+					<div id="beskrivelse"></div>
+					<div id="varet"></div>
+					<div id="tur">				
+						<a href="#" class="tur" name="turforslag"><p>Turforslag i nærområdet</p></a>
+					</div>
+					Velg innsjekkingsdato <div id="datepicker"></div>
 				</div>
 			</div>
+			<div id="#footer"></div>
 			<div class="row">
 				<div class="col-xs-12">
 					<div id="map" style="width:300px;height:200px;"></div>
