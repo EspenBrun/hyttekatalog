@@ -8,8 +8,6 @@ function validerSkjema(){
 	var tlfInput = $("[name=tlf]").val();
 	var tlf = parseInt(tlfInput) || 0;
 	var dager = $("[name=dager]").val();
-	var dato = $("[name=dato]").val();
-	console.log('dato'+dato);
 	var medlem = $("[name=medlem]").is(':checked');
 
 	if(name == ""){
@@ -41,11 +39,6 @@ function validerSkjema(){
 		container.text("Antall dager må være positivt");
 		container.show();
 		return false	
-	}
-	if (dato == "") {
-		container.text("Velg fra dato");
-		container.show();
-		return false
 	}
 
 	return true;
