@@ -84,7 +84,7 @@ $(document).ready(function(){
 				txt += "<br>";
 				txt += "Pris: " + $(this).find("pris").text();
 				txt += "<br>";
-				txt += "<a href='hyttebeskrivelse.html' id='" + $(this).find("hytteid").text().trim() + "'>";
+				txt += "<a href='#' class='eihytte' id='" + $(this).find("hytteid").text() + "'>";
 				txt += "Vil du vite mer?";
 				txt += "</a>";
 				txt += "</div>";
