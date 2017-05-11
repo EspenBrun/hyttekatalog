@@ -33,13 +33,19 @@ $(document).ready(function(){
 		return this.tagName + '=' + $(this).text();
 		}).get().join(' ');
 		
-		alert(txt);	
 		
 		$("#eihytte").html("<p>"+txt+"</p>");
 		
 			}						
 		});										
 	}			// Send HTMLen til dette elementet	
-searchXML();
+	searchXML();
+
+
+	$(".btn-order").click(function(e){
+		e.preventDefault(); 
+		window.location.href = 'skjema_bestilling.html';
+
+	});
 			
 });
