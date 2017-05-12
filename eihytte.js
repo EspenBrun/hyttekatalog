@@ -63,7 +63,6 @@ $(document).ready(function(){
 				$("#header-eihytte").text(s);
 				$("#bilde").html("<img class='img-responsive' src='" + imageSrc + "' alt='" + s + "'>");
 
-
 				// laste in været fra yr		
 				varet = '\n'+ '<iframe src="'+ vaer +'" width="468" height="290" frameborder="0" style="margin: 10px 0 10px 0" scrolling="no"></iframe>\n';
 
@@ -80,8 +79,6 @@ $(document).ready(function(){
 				.done(function( script, textStatus ) {
 					myMap(coordinate, location);
 				});
-
-				
 			}
 		});
 	}
@@ -124,11 +121,11 @@ $(document).ready(function(){
 		    }
 		    if (event) {
 		         //If the event is defined, perform some action here; show a tooltip, navigate to a URL, etc. 
+		        alert('Denne datoen er opptatt');
 		       dt = "";
 			} else {
 			   dt = selectedDate;
 			}
-
 		}
 	}); 
 
