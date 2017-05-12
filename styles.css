@@ -78,6 +78,10 @@
   color: red;
 }
 
+.btn-order {
+  width: 80%;
+}
+
 .navbar {
   overflow: hidden;
   background-color: #333;
