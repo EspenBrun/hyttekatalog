@@ -116,7 +116,8 @@ $(document).ready(function(){
 	$(".container-navbar").load("navbar.html");	 
 	$(".container-footer").load("footer.html");
 
-	$(".navbar").on("click", "a", function(e){
+	// force reload of page if a cabin type is clicked, or new content wont be loaded
+	$(".navbar").on("click", "a", function(){
 		location.reload();
 
 	});
