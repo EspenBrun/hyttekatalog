@@ -28,6 +28,7 @@ $(document).ready(function(){
 	var tur;
 	var info;
 	var varet;
+	var pris;
 	var txtArr;
 	var events;
 	var coordinateString;
@@ -56,6 +57,7 @@ $(document).ready(function(){
 				info = txtArr[10].toString().trim();
 				vaer = txtArr[14].toString().trim();
 				tur = txtArr[15].toString().trim();
+				pris = txtArr[9].toString().trim();
 				coordinateString = txtArr[16].toString().trim().split(':');
 				var coordinate = {lat: parseInt(coordinateString[0]), lng: parseInt(coordinateString[1])};
 				
@@ -142,7 +144,7 @@ $(document).ready(function(){
 			// container.show();
 		} else {
 			dt = $.format.date(dt, 'yyyy-MM-dd');
-			window.location.href = 'skjema_bestilling.html#' + id.trim() + ':' + dt;
+			window.location.href = 'skjema_bestilling.html#' + id.trim() + ':' + dt + ':' + pris.trim();
 		}
 	});
 	

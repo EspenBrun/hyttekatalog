@@ -8,6 +8,7 @@ function validerSkjema(){
 	var tlfInput = $("[name=tlf]").val();
 	var tlf = parseInt(tlfInput) || 0;
 	var dager = $("[name=dager]").val();
+	var pris = $("[name=pris]").val();
 	var medlem = $("[name=medlem]").is(':checked');
 
 	if(name == ""){
@@ -40,6 +41,17 @@ function validerSkjema(){
 		container.show();
 		return false	
 	}
-
-	return true;
+	else {
+	pris = pris * dager;	
+	$("[name=pris]").val(pris);
+	return true
+	}
+	
+	if ($('input.checkbox_check').prop(':checked')); {
+    var pris = pris * 0.85;
+    $("[name=pris]").val(pris);
+    alert(pris);
+    return true
+    }
+	
 }

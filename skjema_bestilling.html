@@ -11,6 +11,7 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <!-- logic for skjema_bestilling -->
       <script type="text/javascript" language="javascript" src="skjema_bestilling.js"></script>
+      <script type="text/javascript" language="javascript" src="valider_skjema.js"></script>
       <!-- custom styles -->
       <link rel="stylesheet" type="text/css" href="./styles/styles.css">
     
@@ -64,6 +65,10 @@
               <tr>
                 <td>Ønsker å leie antall dager:*</td>
                 <td><input class="form-input" type="number" name="dager"/></td>
+              </tr>
+              <tr>
+                <td>Pris per døgn:</td>
+                <td><input class="form-input" type="text" name="pris" readonly/></td>
               </tr>
             </table>
             <p>
