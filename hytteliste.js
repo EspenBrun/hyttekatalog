@@ -108,9 +108,9 @@ $(document).ready(function(){
 
 	$('#hytteliste').on('click', '.eihytte', function (e) {
 	    e.preventDefault(); // hindre default oppførsel for browseren ved klikk
-		var hytteid = this.id;
+		var hytteid = this.id.trim();
 		var subArray = [hytteid, hyttetype]
-		window.location.href = 'eihytte.html#' + subArray;
+		window.location.href = 'eihytte.html#' + hytteid + ':' + hyttetype;
 	});	
 	
 	$(".container-navbar").load("navbar.html");	 

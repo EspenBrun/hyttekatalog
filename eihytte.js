@@ -20,9 +20,11 @@ $(document).ready(function(){
 	}
 
 	// Hent informasjon om hvilken type hytter som skal vises fra enden av urlen
-	var substringArray = window.location.hash.substring(1).split(',');
+	var substringArray = window.location.hash.substring(1).split(':');
 	var id = substringArray[0];
 	var hyttetype = substringArray[1];
+	console.log('id:'+id);
+	console.log('hyttetype:'+hyttetype);
 	var myXML;
 	var txt;
 	var tur;
@@ -43,7 +45,7 @@ $(document).ready(function(){
 			success: function(xml) {
 				//finner hytteid value i xml
 				myXML = $(xml).find(hyttetype).filter(function(){		
-					return $(this).find("hytteid").text()==id;		 
+					return $(this).find("hytteid").text().trim()==id;		 
 				});
 			
 				//lagrer hytte-info i display variabelen
