@@ -8,7 +8,7 @@ function validerSkjema(){
 	var tlfInput = $("[name=tlf]").val();
 	var tlf = parseInt(tlfInput) || 0;
 	var dager = $("[name=dager]").val();
-	var pris = $("[name=pris]").val();
+	var pris = $("[name=totalpris]").val();
 	var medlem = $("[name=medlem]").is(':checked');
 
 	if(name == ""){
@@ -47,6 +47,6 @@ function validerSkjema(){
 	    pris = pris * 0.85;
     }
 
-	$("[name=pris]").val(pris);
+	$("[name=totalpris]").val(pris);
 	return true
 }
