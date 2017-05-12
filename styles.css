@@ -1,6 +1,8 @@
 /*Styles*/
 
-
+.container-main {
+  padding-top: 60px;
+}
 
 .container-footer {
   background-color: teal;
@@ -9,11 +11,11 @@
 }
 
 .banner {
-  min-height: 90vh;
+  min-height: 80vh;
   background-image: url(cabin_banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom left;
+  background-position: center left;
 }
 
 .banner-txt {

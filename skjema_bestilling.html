@@ -19,67 +19,67 @@
   </head>
   <body>
     <div class="container-fluid container-navbar navbar">
-			      <!-- loaded from js -->
-		</div>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-12 col-sm-10 col-sm-offset-2">
-        <form name="mittSkjema"
-          id="mittSkjema"
-          action="http://www.iie.hist.no/fag/webutvikling1/prosjekt/behandle.php"
-          method="post"
-          onSubmit="return validerSkjema();"
-        >
-          <h2>Fullfør din bestilling her:</h2>
-          <p id="container-message"></p>
-          <table>
-            <tr>
-              <td>Din hyttes unike id:</td>
-              <td><input class="form-input" type="text" name="hytteid" readonly/></td>
-            </tr>
-            <tr>
-              <td>Navn*:</td>
-              <td><input class="form-input" type="text" name="navn"/></td>
-            </tr>
-            <tr>
-              <td>Adresse*:</td>
-              <td><input class="form-input" type="text" name="adresse"/></td>
-            </tr>
-            <tr>
-              <td>Postnr.*:</td>
-              <td><input class="form-input" type="text" name="postnr"/></td>
-            </tr>
-            <tr>
-              <td>Epost*:</td>
-              <td><input class="form-input" type="text" name="epost"/></td>
-            </tr>
-            <tr>
-              <td>Tlf*:</td>
-              <td><input class="form-input" type="text" name="tlf"/></td>
-            </tr>
-            <tr>
-              <td>Ønsker å leie fra dato:*</td>
-              <td><input class="form-input" type="text" name="dato" readonly/></td>
-            </tr>
-            <tr>
-              <td>Ønsker å leie antall dager:*</td>
-              <td><input class="form-input" type="number" name="dager"/></td>
-            </tr>
-          </table>
-          <p>
-            <input type="checkbox" name="medlem" value="medlem" />
-            <label>Jeg er medlem av Turistforeningen og får 15% rabatt på leie av hytte.</label>
-          </p>
-          <input class="form-btn reset-btn" type="reset" name="knapp" value="Tilbakestill">
-          <input class="form-btn send-btn" type="submit" name="knapp" value="Send">
-        </form>
-        <h4>*Feltet må fylles ut!</h4>
+  		      <!-- loaded from js -->
+  	</div>
+    <div class="container-fluid container-main">
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-2">
+          <form name="mittSkjema"
+            id="mittSkjema"
+            action="http://www.iie.hist.no/fag/webutvikling1/prosjekt/behandle.php"
+            method="post"
+            onSubmit="return validerSkjema();"
+          >
+            <h2>Fullfør din bestilling her:</h2>
+            <p id="container-message"></p>
+            <table>
+              <tr>
+                <td>Din hyttes unike id:</td>
+                <td><input class="form-input" type="text" name="hytteid" readonly/></td>
+              </tr>
+              <tr>
+                <td>Navn*:</td>
+                <td><input class="form-input" type="text" name="navn"/></td>
+              </tr>
+              <tr>
+                <td>Adresse*:</td>
+                <td><input class="form-input" type="text" name="adresse"/></td>
+              </tr>
+              <tr>
+                <td>Postnr.*:</td>
+                <td><input class="form-input" type="text" name="postnr"/></td>
+              </tr>
+              <tr>
+                <td>Epost*:</td>
+                <td><input class="form-input" type="text" name="epost"/></td>
+              </tr>
+              <tr>
+                <td>Tlf*:</td>
+                <td><input class="form-input" type="text" name="tlf"/></td>
+              </tr>
+              <tr>
+                <td>Ønsker å leie fra dato:*</td>
+                <td><input class="form-input" type="text" name="dato" readonly/></td>
+              </tr>
+              <tr>
+                <td>Ønsker å leie antall dager:*</td>
+                <td><input class="form-input" type="number" name="dager"/></td>
+              </tr>
+            </table>
+            <p>
+              <input type="checkbox" name="medlem" value="medlem" />
+              <label>Jeg er medlem av Turistforeningen og får 15% rabatt på leie av hytte.</label>
+            </p>
+            <input class="form-btn reset-btn" type="reset" name="knapp" value="Tilbakestill">
+            <input class="form-btn send-btn" type="submit" name="knapp" value="Send">
+          </form>
+          <h4>*Feltet må fylles ut!</h4>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container-fluid container-footer">
-    <!-- hentes fra js -->
-  </div>
+    <div class="container-fluid container-footer">
+      <!-- hentes fra js -->
+    </div>
 
     
     <script type="text/javascript" src="valider_skjema.js"></script>
