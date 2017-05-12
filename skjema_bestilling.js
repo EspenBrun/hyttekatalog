@@ -11,6 +11,6 @@ $(document).ready(function(){
 	console.log('pris'+pris);
 	$("[name=hytteid]").val(id);
 	$("[name=dato]").val(date);
-	$("[name=pris]").val(pris);
+	$("[name=totalpris]").val(pris);
 
 });
