@@ -115,6 +115,11 @@ $(document).ready(function(){
 	
 	$(".container-navbar").load("navbar.html");	 
 	$(".container-footer").load("footer.html");
+
+	$(".navbar").on("click", "a", function(e){
+		location.reload();
+
+	});
 });
 					
 
