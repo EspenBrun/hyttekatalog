@@ -40,16 +40,16 @@ $(document).ready(function(){
 				txt += "<div class='carousel-inner'>";
 				// Slides
 				txt += "<div class='item active'>";
-				txt += "<img src='" + $(this).find("bilde").text()+ "' alt='Los Angeles'>";
+				txt += "<img src='" + $(this).find("bilde").text()+ "' alt='Hyttebilde 1'>";
 				txt += "</div>";
 				txt += "<div class='item'>";
-				txt += "<img src='" + $(this).find("bilde1").text()+ "' alt='Chicago'>";
+				txt += "<img src='" + $(this).find("bilde1").text()+ "' alt='Hyttebilde 1'>";
 				txt += "</div>";
 				txt += "<div class='item'>";
-				txt += "<img src='" + $(this).find("bilde2").text()+ "' alt='Chicago'>";
+				txt += "<img src='" + $(this).find("bilde2").text()+ "' alt='Hyttebilde 1'>";
 				txt += "</div>";
 				txt += "<div class='item'>";
-				txt += "<img src='" + $(this).find("bilde3").text()+ "' alt='New York'>";
+				txt += "<img src='" + $(this).find("bilde3").text()+ "' alt='Hyttebilde 1'>";
 				txt += "</div>";
 				txt += "</div>";
 				// Left and right controls
@@ -119,9 +119,5 @@ $(document).ready(function(){
 	// force reload of page if a cabin type is clicked, or new content wont be loaded
 	$(".navbar").on("click", "a", function(){
 		location.reload();
-
 	});
 });
-					
-
-					

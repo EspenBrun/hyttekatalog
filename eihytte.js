@@ -51,6 +51,7 @@ $(document).ready(function(){
 				}).get().join(' ');
 						
 				txtArr = txt.split(',');
+				imageSrc = txtArr[1].toString().trim();
 				location = txtArr[2].toString().trim();
 				info = txtArr[10].toString().trim();
 				vaer = txtArr[14].toString().trim();
@@ -58,11 +59,16 @@ $(document).ready(function(){
 				coordinateString = txtArr[16].toString().trim().split(':');
 				var coordinate = {lat: parseInt(coordinateString[0]), lng: parseInt(coordinateString[1])};
 				
+				var s = hyttetype.slice(0, -1) + " på " + location;
+				$("#header-eihytte").text(s);
+				$("#bilde").html("<img class='img-responsive' src='" + imageSrc + "' alt='" + s + "'>");
+
+
 				// laste in været fra yr		
 				varet = '\n'+ '<iframe src="'+ vaer +'" width="468" height="290" frameborder="0" style="margin: 10px 0 10px 0" scrolling="no"></iframe>\n';
 
 				$("#beskrivelse").load(info);
-					$("#varet").append(varet);
+				$("#varet").append(varet);
 
 				$(".tur").click(function(e){
 						e.preventDefault(); // hindre default oppførsel for browseren ved klikk
