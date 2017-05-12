@@ -7,6 +7,6 @@ $(document).ready(function(){
 	console.log('id'+id);
 	console.log('dato'+date);
 	$("[name=hytteid]").val(id);
-	$("[name=date]").val(date);
+	$("[name=dato]").val(date);
 
 });

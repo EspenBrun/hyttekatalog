@@ -89,7 +89,6 @@ $(document).ready(function(){
 
 	$("#datepicker").datepicker({
 
-		//dateFormat: 'MM-dd-yyyy',
 		beforeShowDay: function(date) {
 		    var result = [true, '', null];
 		    var matching = $.grep(events, function(event) {
@@ -130,6 +129,7 @@ $(document).ready(function(){
 	//Datepicker_end
 
 	var container = $("#container-message");
+
 	// order button
 	// a date must be picked to order
 	$(".btn-order").click(function(e){
@@ -138,6 +138,7 @@ $(document).ready(function(){
 			container.text("Du må velge en innsjekkingsdato for å bestille");
 			// container.show();
 		} else {
+			dt = $.format.date(dt, 'yyyy-MM-dd');
 			window.location.href = 'skjema_bestilling.html#' + id.trim() + ':' + dt;
 		}
 	});
