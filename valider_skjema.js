@@ -41,17 +41,12 @@ function validerSkjema(){
 		container.show();
 		return false	
 	}
-	else {
-	pris = pris * dager;	
+
+	pris = pris * dager;
+	if ($('input.checkbox_check').prop(':checked')); {
+	    pris = pris * 0.85;
+    }
+
 	$("[name=pris]").val(pris);
 	return true
-	}
-	
-	if ($('input.checkbox_check').prop(':checked')); {
-    var pris = pris * 0.85;
-    $("[name=pris]").val(pris);
-    alert(pris);
-    return true
-    }
-	
 }
