@@ -113,7 +113,8 @@ $(document).ready(function(){
 		window.location.href = 'eihytte.html#' + subArray;
 	});	
 	
-	$(".container-navbar").load("navbar.html");	   
+	$(".container-navbar").load("navbar.html");	 
+	$(".container-footer").load("footer.html");
 });
 					
 
